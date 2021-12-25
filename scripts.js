@@ -59,7 +59,7 @@ rock.addEventListener('click', () => {
         playerScore++;
         results.innerHTML = results.innerHTML + "<p>Player win</p>";
     }
-    score.textContent = playerScore + " : " + computerScore;
+    score.textContent = "Score: " + playerScore + " : " + computerScore;
     if (playerScore == 5 || computerScore == 5) {
         results.appendChild(gameOver);
     }
@@ -77,7 +77,7 @@ paper.addEventListener('click', () => {
         playerScore++;
         results.innerHTML = results.innerHTML + "<p>Player win</p>";
     }
-    score.textContent = playerScore + " : " + computerScore;
+    score.textContent = "Score: " + playerScore + " : " + computerScore;
     if (playerScore == 5 || computerScore == 5) {
         results.appendChild(gameOver);
     }
@@ -95,7 +95,7 @@ scissors.addEventListener('click', () => {
         playerScore++;
         results.innerHTML = results.innerHTML + "<p>Player win</p>";
     }
-    score.textContent = playerScore + " : " + computerScore;
+    score.textContent = "Score: " + playerScore + " : " + computerScore;
     if (playerScore == 5 || computerScore == 5) {
         results.appendChild(gameOver);
     }

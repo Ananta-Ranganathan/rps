@@ -52,18 +52,12 @@ rock.addEventListener('click', () => {
     let res = playRound("rock", computerPlay());
     if (res == -1) {
         computerScore++;
-        let playerLoss = document.createElement('li');
-        playerLoss.textContent = 'Player loss';
-        results.appendChild(playerLoss);
+        results.innerHTML = results.innerHTML + "<p>Player loss</p>";
     } else if (res == 0) {
-        let tie = document.createElement('li');
-        tie.textContent = 'Tie';
-        results.appendChild(tie);
+        results.innerHTML = results.innerHTML + "<p>Tie</p>";
     } else {
         playerScore++;
-        let playerWin = document.createElement('li');
-        playerWin.textContent = 'Player win';
-        results.appendChild(playerWin);
+        results.innerHTML = results.innerHTML + "<p>Player win</p>";
     }
     score.textContent = playerScore + " : " + computerScore;
     if (playerScore == 5 || computerScore == 5) {
@@ -76,18 +70,12 @@ paper.addEventListener('click', () => {
     let res = playRound("paper", computerPlay());
     if (res == -1) {
         computerScore++;
-        let playerLoss = document.createElement('li');
-        playerLoss.textContent = 'Player loss';
-        results.appendChild(playerLoss);
+        results.innerHTML = results.innerHTML + "<p>Player loss</p>";
     } else if (res == 0) {
-        let tie = document.createElement('li');
-        tie.textContent = 'Tie';
-        results.appendChild(tie);
+        results.innerHTML = results.innerHTML + "<p>Tie</p>";
     } else {
         playerScore++;
-        let playerWin = document.createElement('li');
-        playerWin.textContent = 'Player win';
-        results.appendChild(playerWin);
+        results.innerHTML = results.innerHTML + "<p>Player win</p>";
     }
     score.textContent = playerScore + " : " + computerScore;
     if (playerScore == 5 || computerScore == 5) {
@@ -100,18 +88,12 @@ scissors.addEventListener('click', () => {
     let res = playRound("scissors", computerPlay());
     if (res == -1) {
         computerScore++;
-        let playerLoss = document.createElement('li');
-        playerLoss.textContent = 'Player loss';
-        results.appendChild(playerLoss);
+        results.innerHTML = results.innerHTML + "<p>Player loss</p>";
     } else if (res == 0) {
-        let tie = document.createElement('li');
-        tie.textContent = 'Tie';
-        results.appendChild(tie);
+        results.innerHTML = results.innerHTML + "<p>Tie</p>";
     } else {
         playerScore++;
-        let playerWin = document.createElement('li');
-        playerWin.textContent = 'Player win';
-        results.appendChild(playerWin);
+        results.innerHTML = results.innerHTML + "<p>Player win</p>";
     }
     score.textContent = playerScore + " : " + computerScore;
     if (playerScore == 5 || computerScore == 5) {

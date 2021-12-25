@@ -41,9 +41,6 @@ function playRound(playerSelection, computerSelection) {
 
 let results = document.querySelector('#results');
 
-const playerLoss = document.createElement('li');
-playerLoss.textContent = 'Player loss';
-
 let score = document.querySelector('#score');
 let playerScore = 0;
 let computerScore = 0;
@@ -55,6 +52,8 @@ rock.addEventListener('click', () => {
     let res = playRound("rock", computerPlay());
     if (res == -1) {
         computerScore++;
+        let playerLoss = document.createElement('li');
+        playerLoss.textContent = 'Player loss';
         results.appendChild(playerLoss);
     } else if (res == 0) {
         let tie = document.createElement('li');
@@ -77,6 +76,8 @@ paper.addEventListener('click', () => {
     let res = playRound("paper", computerPlay());
     if (res == -1) {
         computerScore++;
+        let playerLoss = document.createElement('li');
+        playerLoss.textContent = 'Player loss';
         results.appendChild(playerLoss);
     } else if (res == 0) {
         let tie = document.createElement('li');
@@ -99,6 +100,8 @@ scissors.addEventListener('click', () => {
     let res = playRound("scissors", computerPlay());
     if (res == -1) {
         computerScore++;
+        let playerLoss = document.createElement('li');
+        playerLoss.textContent = 'Player loss';
         results.appendChild(playerLoss);
     } else if (res == 0) {
         let tie = document.createElement('li');
